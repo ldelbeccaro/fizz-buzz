@@ -5,7 +5,7 @@ $(document).ready( function() {
 		var maxNum;
 		while (isNum == false) {
 			maxNum = +prompt( 'Enter a whole number up to which to count:');
-			if ( typeof maxNum == 'number' && maxNum % 1 == 0) { isNum = true; }
+			if ( maxNum != '' && typeof maxNum == 'number' && maxNum % 1 == 0) { isNum = true; }
 		}
 		console.log('Count to: ' + maxNum);
 		return maxNum;
